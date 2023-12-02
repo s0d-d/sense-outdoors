@@ -4,9 +4,11 @@ import { PageTitle } from "@components/Title";
 import { Layout } from "@components/Layout";
 import { HomeBanner } from "@components/Banner";
 import { Columns } from "@components/Columns";
+import { Maps } from "@components/Maps";
 import { ContentImage } from "@components/ContentImage";
 import { Content } from "@components/Content";
-import { Accordion } from "@components/Accordion";
+import { Contact } from "@components/Contact";
+import { Partners } from "@components/Partners";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
 import {
@@ -21,8 +23,8 @@ export default function Home() {
     return (
         <Layout className="">
             <SEO
-                title="NutriTrack - A landing page template 🚀"
-                description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
+                title="Sense Outdoors - Unparalleled Fishing Experience Mongolia"
+                description="Gear up your next fishing adventure in Mongolia with our premium collection."
             />
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
                 {/* { Page Banner } */}
@@ -34,23 +36,34 @@ export default function Home() {
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
                         <SectionContainer id="features" className="features">
-                            <BadgeGroup alignment="center">
-                                <BadgeMessage>Features</BadgeMessage>
-                            </BadgeGroup>
+                            <Content
+                                className="text-center text-xs"
+                                alignment="center"
+                            >
+                                <p>WHAT WE BELIEVE IN</p>
+                            </Content>
                             <PageTitle
                                 className="text-center mx-auto"
                                 type="default"
+                            ></PageTitle>
+                            <Content
+                                className="text-center mb-32 text-md"
+                                alignment="center"
                             >
-                                Simplify Your Nutrition Journey with NutriTrack
-                            </PageTitle>
-                            <Content className="text-center" alignment="center">
-                                <p>
-                                    Hey there! Welcome to NutriTrack, the
-                                    ultimate nutrition meal planner powered by
-                                    Notion. We&apos;ve got some awesome features
-                                    lined up to make your nutrition journey a
-                                    piece of cake (pun intended). Check them
-                                    out:
+                                <p
+                                    style={{
+                                        color: "black",
+                                        fontSize: "32px",
+                                        lineHeight: "50px"
+                                    }}
+                                >
+                                    At Sense Outdoors, we are dedicated to
+                                    curating an unparalleled fishing experience
+                                    for our customers. Our commitment goes
+                                    beyond providing exceptional gear; it
+                                    extends to fostering the growth and
+                                    enriching the culture of the fishing sport
+                                    in Mongolia.
                                 </p>
                             </Content>
                             <ContentImage />
@@ -61,109 +74,129 @@ export default function Home() {
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
                         <SectionContainer className="feature-tabs">
-                            <BadgeGroup alignment="center">
-                                <BadgeMessage>More Features</BadgeMessage>
-                                <BadgeIcon icon="twemoji:waving-hand" />
-                            </BadgeGroup>
+                            <Content className="text-center" alignment="center">
+                                <p>Ready to elevate your fishing experience?</p>
+                            </Content>
+
                             <PageTitle
-                                className="text-center mx-auto"
+                                className="text-center mx-auto mt-4 mb-4"
                                 type="default"
                             >
-                                Master Your Meal Planning and Nutrition Journey
+                                Browse our premium collection
                             </PageTitle>
                             <Content className="text-center" alignment="center">
-                                <p>
-                                    Our comprehensive Notion template designed
-                                    to empower you on your meal planning and
-                                    nutrition journey. With our user-friendly
-                                    features, customizable layouts, and seamless
-                                    recipe integration, taking control of your
-                                    meals has never been easier.
-                                </p>
+                                <p>and gear up for your next adventure!</p>
                             </Content>
-                            <CardGroup className="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2">
+                            <CardGroup className="grid scroll-m-24 gap-8 grid-cols-1 mx-auto mt-24 sm:grid-cols-2 md:grid-cols-3">
                                 <Card className="col-span-1 text-primary-900">
                                     <CardBody className="w-full bg-white-600/20 p-12">
                                         <CardImage
-                                            src="/features4.png"
+                                            src="/card1.jpg"
                                             alt="Customizable Layouts image used."
+                                            className="w-auto h-auto"
                                         />
                                         <CardHeader className="!text-black !text-2xl !font-bold">
-                                            Customizable Layouts
+                                            Fly rod
                                         </CardHeader>
                                         <p>
-                                            Personalize your meal planning
-                                            experience with our flexible
-                                            layouts. Tailor your sections,
-                                            categories, and tabs to suit your
-                                            unique style and organization
-                                            preferences. Our template adapts to
-                                            your needs, providing a seamless and
-                                            personalized planning experience.
+                                            Embark on an angler's journey like
+                                            never before with our exceptional
+                                            Fly Rods. Meticulously crafted for
+                                            the unique demands of Mongolian
+                                            landscapes, these rods redefine
+                                            precision and power. Whether you're
+                                            a seasoned pro or a passionate
+                                            beginner, our Fly Rods are your
+                                            gateway to mastering the art of
+                                            casting in the stunning rivers of
+                                            Mongolia.
                                         </p>
                                     </CardBody>
                                 </Card>
                                 <Card className="col-span-1 text-primary-900">
                                     <CardBody className="w-full bg-white-600/20 p-12">
                                         <CardImage
-                                            src="/features3.png"
+                                            src="/card2.jpg"
                                             alt="Progress Tracking image used."
                                         />
                                         <CardHeader className="!text-black !text-2xl !font-bold">
-                                            Progress Tracking
+                                            Fly reels
                                         </CardHeader>
                                         <p>
-                                            Celebrate your wins and stay
-                                            motivated on your nutrition journey.
-                                            NutriTrack allows you to monitor
-                                            your progress with weight,
-                                            measurements, and other key metrics.
-                                            Track your improvements over time
-                                            and see the positive impact of your
-                                            healthy choices.
+                                            ‍Navigate Mongolian waters with
+                                            precision using our premium Fly
+                                            Reels. Engineered for the toughest
+                                            currents, these reels seamlessly
+                                            blend cutting-edge technology with
+                                            craftsmanship, ensuring a smooth and
+                                            reliable performance. Elevate your
+                                            angling game with gear designed to
+                                            conquer every ripple and current
+                                            with finesse.
+                                        </p>
+                                    </CardBody>
+                                </Card>
+                                <Card className="col-span-1 text-primary-900">
+                                    <CardBody className="w-full bg-white-600/20 p-12">
+                                        <CardImage
+                                            src="/card3.jpg"
+                                            alt="Progress Tracking image used."
+                                        />
+                                        <CardHeader className="!text-black !text-2xl !font-bold">
+                                            Apparel
+                                        </CardHeader>
+                                        <p>
+                                            Our Apparel collection isn't just
+                                            about aesthetics; it's about
+                                            functionality and comfort tailored
+                                            for the Mongolian fishing
+                                            experience. From durable outer
+                                            layers to moisture-wicking
+                                            innerwear, gear up with apparel
+                                            designed to withstand the elements.
+                                            Fish in style and conquer nature
+                                            with confidence in clothing that
+                                            complements your angling passion.
                                         </p>
                                     </CardBody>
                                 </Card>
                             </CardGroup>
                         </SectionContainer>
                     </MotionBTTContainer>
-                    {/* Testimonials */}
-                    <MotionBTTContainer
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                        <SectionContainer
-                            id="testimonials"
-                            className="benefits"
-                        >
-                            <BadgeGroup alignment="left">
-                                <BadgeMessage>Testimonials</BadgeMessage>
-                                <BadgeIcon icon="twemoji:waving-hand" />
-                            </BadgeGroup>
-                            <PageTitle className="" type="default">
-                                This is what our customers have to say about
-                                this template
-                            </PageTitle>
-                            <Columns />
-                        </SectionContainer>
-                    </MotionBTTContainer>
-                    {/* Accordions */}
+                    {/* Partnership */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
                         <SectionContainer id="faq" className="faq">
-                            <BadgeGroup alignment="center">
-                                <BadgeMessage>FAQ</BadgeMessage>
-                            </BadgeGroup>
                             <PageTitle
-                                className="text-center mx-auto"
+                                className="text-center mx-auto mt-4 mb-0"
                                 type="default"
                             >
-                                Got some burning questions about NutriTrack?{" "}
-                                <br></br>
-                                <br></br>No worries! We&apos;ve got the answers
-                                you need:
+                                Partnership
                             </PageTitle>
-                            <Accordion />
+                            <Partners />
+                        </SectionContainer>
+                    </MotionBTTContainer>
+                    {/* Location */}
+                    <MotionBTTContainer
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                        <PageTitle
+                            className="text-center mx-auto"
+                            type="default"
+                            style={{
+                                fontSize: "36px",
+                                lineHeight: "50px"
+                            }}
+                        >
+                            Come visit us at our store.
+                        </PageTitle>
+                        <SectionContainer
+                            id="visitus"
+                            className="grid scroll-m-24 gap-8 grid-cols-1 mx-auto mt-24 md:grid-cols-12"
+                        >
+                            <Maps className="md:col-span-7" />
+                            <Contact className="md:col-span-5" />
                         </SectionContainer>
                     </MotionBTTContainer>
                 </SectionContainer>

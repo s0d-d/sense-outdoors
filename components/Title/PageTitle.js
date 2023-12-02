@@ -12,8 +12,18 @@ export const PageTitle = ({ children, className = "", type = "" }) => {
             className={`page-title--content max-w-3xl ${
                 className && className
             }`}
+            // style={}
         >
-            <h1 className={titleClass}>{children}</h1>
+            <h1
+                className={titleClass}
+                style={{
+                    fontSize: "36px",
+                    fontWeight: "normal",
+                    lineHeight: "50px"
+                }}
+            >
+                {children}
+            </h1>
         </SectionContainer>
     );
 };

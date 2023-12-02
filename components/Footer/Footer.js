@@ -6,43 +6,43 @@ import { Icon } from "@iconify/react";
 
 const DATA = [
     {
-        title: "Template",
-        items: [
-            {
-                label: "Features",
-                href: "#features"
-            },
-            {
-                label: "Testimonials",
-                href: "#testimonials"
-            },
-            {
-                label: "FAQ",
-                href: "#faq"
-            }
-        ]
+        title: "",
+        items: []
+        //     {
+        //         label: "Features",
+        //         href: "#features"
+        //     },
+        //     {
+        //         label: "Testimonials",
+        //         href: "#testimonials"
+        //     },
+        //     {
+        //         label: "FAQ",
+        //         href: "#faq"
+        //     }
+        // ]
     },
     {
-        title: "Company",
+        title: "Social Media",
         items: [
-            {
-                label: "About",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Twitter",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Instagram",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
+            // {
+            //     label: "About",
+            //     href: "https://github.com/christian-luntok/",
+            //     target: "_blank"
+            // },
+            // {
+            //     label: "Twitter",
+            //     href: "https://github.com/christian-luntok/",
+            //     target: "_blank"
+            // },
+            // {
+            //     label: "Instagram",
+            //     href: "https://github.com/christian-luntok/",
+            //     target: "_blank"
+            // },
             {
                 label: "Facebook",
-                href: "https://github.com/christian-luntok/",
+                href: "https://facebook.com/senseoutdoors/",
                 target: "_blank"
             }
         ]
@@ -54,90 +54,62 @@ export const Footer = () => {
     const year = date.getFullYear();
 
     return (
-        <footer id="footer" className="bg-white">
+        <footer id="footer" className="bg-black text-white">
             {/* Footer Links */}
             <SectionContainer className="footer--container wrap wrap-px relative z-10">
-                <div className="footer--content-container py-16">
-                    <div className="footer-links mb-12 grid grid-cols-2 gap-8 md:mb-16 md:grid-cols-8 lg:grid-cols-12">
-                        <div className="col-span-6">
-                            <div className="footer--logo grid gap-8">
-                                <Link href="/">
-                                    <Image
-                                        src="/nutritrack.svg"
-                                        alt="logo"
-                                        className="h-10 w-auto"
-                                        height="25"
-                                        width="100"
-                                        priority
-                                    />
-                                </Link>
-                                {/* Get Template button; remove if not used */}
-                                <ButtonGroup alignment="left">
-                                    <a
-                                        role="button"
-                                        href="https://github.com/christian-luntok/nutritrack"
-                                        className="btn btn--secondary"
-                                    >
-                                        Get Template
-                                        <Icon icon="material-symbols:arrow-forward-rounded" />
-                                    </a>
-                                </ButtonGroup>
-                            </div>
+                <div className="footer--content-container py-16 flex flex-col md:flex-row">
+                    <div className="flex-1">
+                        <div className="footer--logo flex gap-8 items-center">
+                            <Link href="/" className="inline-block">
+                                <Image
+                                    src="/sense.png"
+                                    alt="logo"
+                                    className="h-20 w-auto"
+                                    height="25"
+                                    width="1000"
+                                    priority
+                                />
+                            </Link>
                         </div>
-                        <div className="col-span-6">
-                            <div className="footer-menu grid grid-cols-2 md:grid-cols-8 lg:grid-cols-12">
-                                {DATA.map((footerLinks) => (
-                                    <div
-                                        key={footerLinks.title}
-                                        className="footer-menu--container col-span-1 md:col-span-4"
-                                    >
-                                        <h3 className="font-bold text-base mb-2">
-                                            {footerLinks.title}
-                                        </h3>
-                                        <ul className="footer-menu--list">
-                                            {footerLinks.items.map(
-                                                (footerItem) => (
-                                                    <li
-                                                        key={footerItem.label}
-                                                        className="footer-menu--list-item gap-2"
-                                                    >
-                                                        <a
-                                                            className="mb-2 block w-auto font-medium transition-colors duration-300 hover:underline"
-                                                            href={
-                                                                footerItem.href
-                                                            }
-                                                            target={
-                                                                footerItem.target
-                                                            }
-                                                        >
-                                                            {footerItem.label}
-                                                        </a>
-                                                    </li>
-                                                )
-                                            )}
-                                        </ul>
-                                    </div>
-                                ))}
-                            </div>
+                    </div>
+                    <div className="flex-1">
+                        <div className="footer-menu flex flex-wrap md:flex-nowrap justify-between text-center md:text-end">
+                            {DATA.map((footerLinks) => (
+                                <div
+                                    key={footerLinks.title}
+                                    className="footer-menu--container md:w-1/4"
+                                >
+                                    <h3 className="font-bold text-base mb-2">
+                                        {footerLinks.title}
+                                    </h3>
+                                    <ul className="footer-menu--list">
+                                        {footerLinks.items.map((footerItem) => (
+                                            <li
+                                                key={footerItem.label}
+                                                className="footer-menu--list-item mb-2"
+                                            >
+                                                <a
+                                                    className="block w-auto font-medium transition-colors duration-300 hover:underline"
+                                                    href={footerItem.href}
+                                                    target={footerItem.target}
+                                                >
+                                                    {footerItem.label}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </SectionContainer>
+
             {/* Footer Credits */}
             <SectionContainer className="footer-credits relative z-10">
-                <div className="wrap wrap-px py-6">
+                <div className="wrap wrap-px py-6 text-center">
                     <p className="my-0">
-                        © {year} Nutritrack. All rights reserved{" - "}
-                        <span className="font-normal">
-                            A template by{" "}
-                            <Link
-                                className="transition-colors duration-300 hover:underline"
-                                href="https://chrstnl.com"
-                                target="_blank"
-                            >
-                                chrstnl.
-                            </Link>
-                        </span>
+                        © {year} Sense Outdoors. All rights reserved.
                     </p>
                 </div>
             </SectionContainer>

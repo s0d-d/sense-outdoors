@@ -8,8 +8,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                body: ["Inter", "Sans Serif"],
-                title: ["Inter", "Sans Serif"]
+                body: ["Montserrat", "Sans Serif"],
+                title: ["Montserrat", "Sans Serif"]
             },
             fontSize: {
                 body: [

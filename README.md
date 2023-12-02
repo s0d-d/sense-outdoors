@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="NutriTrack logo" src="/public/nutritrack.svg" width="100" />
+  <img alt="NutriTrack logo" src="/public/sense.png" width="100" />
 </div>
 
 <h1 align="center">

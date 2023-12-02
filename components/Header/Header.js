@@ -9,35 +9,34 @@ export const Header = () => {
     return (
         <header
             id="header"
-            className="header fixed left-0 w-full z-30 top-0 bg-white backdrop-filter backdrop-blur-md bg-opacity-50"
+            className="header fixed left-0 w-full z-30 top-0 bg-black backdrop-filter backdrop-blur-md bg-opacity-95"
         >
             <SectionContainer className="header--container wrap wrap-px ">
                 <div className="header-logo--container">
                     <h1 className="logo mb-0">
                         <Link href="/">
                             <Image
-                                src="/nutritrack.svg"
+                                src="/sense.png"
                                 alt="logo"
-                                className="h-6 w-auto"
-                                height="24"
-                                width="100"
+                                className="h-14 w-auto"
+                                height="100"
+                                width="200"
                                 priority
                             />
                         </Link>
                     </h1>
                 </div>
                 <SectionContainer className="flex items-center ml-auto">
-                    <Nav />
-                    <ButtonGroup className="hidden md:block">
+                    {/* <Nav /> */}
+                    {/* <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
                             href="https://github.com/christian-luntok/nutritrack"
-                            className="btn btn--secondary ml-4"
+                            className="btn btn--primary ml-4"
                         >
-                            Get Template
-                            <Icon icon="material-symbols:arrow-forward-rounded" />
+                            Visit Us
                         </a>
-                    </ButtonGroup>
+                    </ButtonGroup> */}
                 </SectionContainer>
             </SectionContainer>
         </header>

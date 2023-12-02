@@ -13,11 +13,13 @@ export const CardImage = ({ src, className, imageClassName, alt }) => {
             <Image
                 src={src}
                 width={600}
-                height={420}
+                height={480}
                 alt={alt}
-                objectFit="cover"
+                // objectFit="cover"
                 loading="lazy"
-                className={`w-full h-full ${imageClassName && imageClassName}`}
+                className={`w-full h-48 object-cover ${
+                    imageClassName && imageClassName
+                }`}
             />
         </div>
     );
