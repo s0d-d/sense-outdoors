@@ -99,17 +99,17 @@ export default function Home() {
                                             Fly rod
                                         </CardHeader>
                                         <p>
-                                            Embark on an angler's journey like
-                                            never before with our exceptional
-                                            Fly Rods. Meticulously crafted for
-                                            the unique demands of Mongolian
-                                            landscapes, these rods redefine
-                                            precision and power. Whether you're
-                                            a seasoned pro or a passionate
-                                            beginner, our Fly Rods are your
-                                            gateway to mastering the art of
-                                            casting in the stunning rivers of
-                                            Mongolia.
+                                            Embark on an angler&apos;s journey
+                                            like never before with our
+                                            exceptional Fly Rods. Meticulously
+                                            crafted for the unique demands of
+                                            Mongolian landscapes, these rods
+                                            redefine precision and power.
+                                            Whether you&apos;re a seasoned pro
+                                            or a passionate beginner, our Fly
+                                            Rods are your gateway to mastering
+                                            the art of casting in the stunning
+                                            rivers of Mongolia.
                                         </p>
                                     </CardBody>
                                 </Card>
@@ -146,10 +146,10 @@ export default function Home() {
                                             Apparel
                                         </CardHeader>
                                         <p>
-                                            Our Apparel collection isn't just
-                                            about aesthetics; it's about
-                                            functionality and comfort tailored
-                                            for the Mongolian fishing
+                                            Our Apparel collection isn&apos;t
+                                            just about aesthetics; it&apos;s
+                                            about functionality and comfort
+                                            tailored for the Mongolian fishing
                                             experience. From durable outer
                                             layers to moisture-wicking
                                             innerwear, gear up with apparel

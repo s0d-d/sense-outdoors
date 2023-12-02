@@ -8,9 +8,8 @@ const Maps = React.memo(function Maps({ className }) {
             height="450"
             className={`w-full h-120 ${className && className}`}
             style={{ border: 0 }}
-            allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
     );
 });
